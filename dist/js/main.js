@@ -78,6 +78,37 @@ $(document).ready(function () {
     $('body').toggleClass('overflow-hidden');
   });
 });
+$(document).ready(function () {
+  $('.header-item-click').on('click', function () {
+    var href = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(href).offset().top
+    }, {
+      duration: 700,
+      easing: "linear"
+    });
+    return false;
+  });
+});
+
+/***/ }),
+
+/***/ "./src/blocks/modules/hero/hero.js":
+/*!*****************************************!*\
+  !*** ./src/blocks/modules/hero/hero.js ***!
+  \*****************************************/
+/***/ (function() {
+
+$(document).ready(function () {
+  $(document).on('click', '.hero__btn', function (event) {
+    $('.popap-hero, .popap-hero-back').addClass('_active');
+    $('body').addClass('overflow-hidden');
+  });
+  $(document).on('click', '.popap-hero-back, .popap-hero__close', function (event) {
+    $('.popap-hero, .popap-hero-back').removeClass('_active');
+    $('body').removeClass('overflow-hidden');
+  });
+});
 
 /***/ }),
 
@@ -186,16 +217,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _modules_calculation_calculation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/calculation/calculation */ "./src/blocks/modules/calculation/calculation.js");
-/* harmony import */ var _modules_calculation_calculation__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_calculation_calculation__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _modules_need_need__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/need/need */ "./src/blocks/modules/need/need.js");
-/* harmony import */ var _modules_need_need__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_need_need__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _modules_examples_examples__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/examples/examples */ "./src/blocks/modules/examples/examples.js");
-/* harmony import */ var _modules_examples_examples__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_examples_examples__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _modules_question_question__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/question/question */ "./src/blocks/modules/question/question.js");
-/* harmony import */ var _modules_question_question__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_question_question__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _modules_news_news__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/news/news */ "./src/blocks/modules/news/news.js");
-/* harmony import */ var _modules_news_news__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_news_news__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _modules_hero_hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/hero/hero */ "./src/blocks/modules/hero/hero.js");
+/* harmony import */ var _modules_hero_hero__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_hero_hero__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_calculation_calculation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/calculation/calculation */ "./src/blocks/modules/calculation/calculation.js");
+/* harmony import */ var _modules_calculation_calculation__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_calculation_calculation__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _modules_need_need__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/need/need */ "./src/blocks/modules/need/need.js");
+/* harmony import */ var _modules_need_need__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_need_need__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modules_examples_examples__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/examples/examples */ "./src/blocks/modules/examples/examples.js");
+/* harmony import */ var _modules_examples_examples__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_examples_examples__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_question_question__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/question/question */ "./src/blocks/modules/question/question.js");
+/* harmony import */ var _modules_question_question__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_question_question__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _modules_news_news__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/news/news */ "./src/blocks/modules/news/news.js");
+/* harmony import */ var _modules_news_news__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_news_news__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 
