@@ -1130,7 +1130,8 @@ body.overflow-hidden {
   border-radius: 3px;
 }
 
-.popap-hero__form-input input {
+.popap-hero__form-input input,
+.popap-hero__form-input button {
   display: block;
   background-color: transparent;
   width: 100%;
@@ -1146,11 +1147,13 @@ body.overflow-hidden {
   border-radius: 3px;
 }
 
-.popap-hero__form-input input[type=submit] {
+.popap-hero__form-input input[type=submit],
+.popap-hero__form-input button[type=submit] {
   cursor: pointer;
 }
 
-.popap-hero__form-input input:focus {
+.popap-hero__form-input input:focus,
+.popap-hero__form-input button:focus {
   border: 1px solid #ffffff;
 }
 
@@ -2085,6 +2088,7 @@ body.overflow-hidden {
 
 .question {
   padding: 56px 0 48px;
+  background: #F2F2F2;
 }
 
 .question__content {
@@ -2813,7 +2817,8 @@ body.overflow-hidden {
     border-radius: 0.833vw;
   }
 
-  .popap-hero__form-input input {
+  .popap-hero__form-input input,
+  .popap-hero__form-input button {
     padding: 0 4.444vw;
     border-radius: 0.833vw;
     font-size: 4.167vw;
