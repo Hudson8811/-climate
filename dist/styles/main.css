@@ -833,6 +833,7 @@ body.overflow-hidden {
 }
 
 .attention-header__title {
+  flex: 0 0 auto;
   padding-left: 42px;
   font-family: "Fira Sans";
   font-style: normal;
