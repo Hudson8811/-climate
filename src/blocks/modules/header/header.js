@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-	$('.header-item-click').on('click', function() {
+	$('.item-click').on('click', function() {
 		$('.top-header').removeClass('js-top-header-active');
 		$('.bottom-header').removeClass('js-bottom-header-active');
 		$('body').removeClass('overflow-hidden');
@@ -26,3 +26,11 @@ $(document).ready(function() {
 	});
 });
 
+var swiper = new Swiper(".attention-header__swiper", {
+	allowTouchMove: false,
+	effect: 'fade',
+	autoHeight: true,
+	autoplay: {
+		delay: 6000,
+	}
+});

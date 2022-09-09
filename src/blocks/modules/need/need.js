@@ -34,3 +34,27 @@ need_pause.addEventListener("click", function (e) {
 	need_img.classList.remove('hide');
 	need__play.classList.remove('hide');
 });
+
+
+$(document).ready(function() {
+	$(document).on('click', '.header-need__question', function(event) {
+		$('.popap-need, .popap-need-back').addClass('_active');
+		$('body').addClass('overflow-hidden');
+	
+		let href = $(this).attr('href');
+		
+		$('html, body').animate({
+			scrollTop: $(href).offset().top
+		}, {
+			duration: 700,
+			easing: "linear"
+		});
+
+		return false;	
+	});
+	$(document).on('click', '.popap-need-back, .popap-need__close', function(event) {
+		$('.popap-need, .popap-need-back').removeClass('_active');
+		$('body').removeClass('overflow-hidden');
+	});	
+	
+});

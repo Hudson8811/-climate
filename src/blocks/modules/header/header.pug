@@ -37,21 +37,21 @@ header.header
 			.bottom-header__menu.menu-bottom-header
 				ul.menu-bottom-header__list 
 					li.menu-bottom-header__item 
-						a.menu-bottom-header__link.header-item-click(href="#") О компании                                  
+						a.menu-bottom-header__link.item-click(href="#") О компании                                  
 					li.menu-bottom-header__item 
-						a.menu-bottom-header__link.header-item-click(href="#workwithus") Почему мы
+						a.menu-bottom-header__link.item-click(href="#workwithus") Почему мы
 					li.menu-bottom-header__item 
-						a.menu-bottom-header__link.header-item-click(href="#turnkey-work") Наши услуги
+						a.menu-bottom-header__link.item-click(href="#turnkey-work") Наши услуги
 					li.menu-bottom-header__item 
-						a.menu-bottom-header__link.header-item-click(href="#stages") Как мы работаем
+						a.menu-bottom-header__link.item-click(href="#stages") Как мы работаем
 					li.menu-bottom-header__item 
-						a.menu-bottom-header__link.header-item-click(href="#examples") Реализованные объекты
+						a.menu-bottom-header__link.item-click(href="#examples") Реализованные объекты
 					li.menu-bottom-header__item 
-						a.menu-bottom-header__link.header-item-click(href="#news") Новости
+						a.menu-bottom-header__link.item-click(href="#news") Новости
 
 
 
-			a(href="#calculation").bottom-header__btn.header-item-click 
+			a(href="#calculation").bottom-header__btn.item-click 
 				span Расчет стоимости
 			.bottom-header__social 
 				a(href="tel:4994440517").bottom-header__tel.header__tel 
@@ -88,7 +88,10 @@ header.header
 	.header__attention.attention-header
 		.attention-header__container.container
 			.attention-header__title Внимание АКЦИЯ
-			.attention-header__text При заказе проектирования с дальнейшей поставкой климатического оборудования - 15% скидка на монтаж и 5% на оборудование! 
+			.attention-header__swiper.swiper 
+				.swiper-wrapper
+					.attention-header__slide.swiper-slide При заказе проектирования с дальнейшей поставкой климатического оборудования - 15% скидка на монтаж и 5% на оборудование! 
+					.attention-header__slide.swiper-slide При закладке оборудования производителя “N” скидка на оборудование - 10% от РРЦ! 
 			.attention-header__btn-wrapper
 				a.attention-header__btn(href="#") 
 					span подробнее

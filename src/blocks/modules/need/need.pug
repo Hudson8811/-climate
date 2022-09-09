@@ -4,7 +4,7 @@ section#need.need
 			|Зачем нужен проект?
 	.header-need 
 		.header-need__container.container
-			a(href="#").header-need__question 
+			a(href="#need").header-need__question 
 				img(src="img/svg/message.svg", alt="alt")
 				span Задать вопрос
 			.swiper.header-need-swiper(thumbsslider='')
@@ -34,7 +34,7 @@ section#need.need
 									li.content-need__item.content-need__item-lh 
 										span Neque porro quisquam 
 										|est, qui dolorem ipsum quia dolor
-								a(href="#").content-need__btn 
+								a(href="#examples").content-need__btn.item-click 
 									span Переход на наши проекты 
 									img(src="img/svg/arrow-circle.svg", alt="alt")
 							#content-need__right.content-need__right 
@@ -47,4 +47,14 @@ section#need.need
 
 					.swiper-slide.content-need__advantage Lorem ipsum dolor sit amet.
 					.swiper-slide.content-need__questions Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. 
+	.popap-need-back
+	.popap-need
+		.popap-need__close
+		form(action="" method="method").popap-need__form 
+			.popap-need__form-input 
+				input(type="text" name="need-name" placeholder="Представьтесь, пожалуйста")
+			.popap-need__form-input 
+				input(type="tel" name="need-phone" placeholder="Ваш номер телефона")
+			.popap-need__form-input.popap-need__form-input--question 
+				textarea(type="text" name="need-question" placeholder="Задайте Ваш вопрос")
 

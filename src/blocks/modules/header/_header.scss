@@ -441,7 +441,7 @@
 			}
 		}
 	
-		&__text {
+		&__swiper {
 			margin-left: 25px;
 			font-family: 'Fira Sans';
 			font-style: normal;
@@ -472,6 +472,13 @@
 				}
 			}
 		}
+
+		&__slide {
+			opacity: 0!important;
+			&.swiper-slide-active {
+				opacity: 1!important;
+			}
+		}
 	
 		&__btn {
 			display: inline-block;
@@ -489,6 +496,7 @@
 				border-radius: 0.833vw;
 			}
 			&-wrapper {
+				display: none;
 				@media (max-width: 992px){
 					flex: 1 1 100%;
 				}
