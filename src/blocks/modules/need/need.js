@@ -58,3 +58,31 @@ $(document).ready(function() {
 	});	
 	
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+	const form_need = document.querySelector('.popap-need__form');
+	form_need.addEventListener('submit', formsend);
+	async function formsend(e) {
+		e.preventDefault();
+
+		let formDataneed = new FormData(form_need);
+
+		form_need.classList.add('_sending');
+
+		let responseneed = await fetch('sendneed.php', {
+			method: 'POST',
+			body: formDataneed
+		});
+
+		if (responseneed.ok) {
+			let result = await responseneed.json();
+			alert(result.message);
+			form_need.reset();
+			form_need.classList.remove('_sending');
+		} else {
+			alert("Ошибка");
+			form_need.classList.remove('_sending');
+		}
+	}
+})

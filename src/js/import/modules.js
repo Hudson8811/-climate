@@ -6,3 +6,4 @@ import "%modules%/need/need";
 import "%modules%/examples/examples";
 import "%modules%/question/question";
 import "%modules%/news/news";
+import "%modules%/stages/stages";

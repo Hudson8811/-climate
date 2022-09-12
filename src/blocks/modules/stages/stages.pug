@@ -8,7 +8,7 @@ section#stages.stages
 				.stages__item-body 
 					.stages__item-title.general-title Выезд проектировщика
 					.stages__item-text Выезд специалиста согласовывается с заказчиком заранее и производится в удобное для заказчика время
-					a(href="#").stages__item-btn 
+					a(href="#stages").stages__item-btn 
 						span Уточнить детали
 			.stages__item.stages__item--ord 
 				.stages__item-img 
@@ -29,3 +29,13 @@ section#stages.stages
 					.stages__item-text 
 					.stages__item-title.general-title Оформление, распечатка и предоставление КП
 					.stages__item-text Готовый проект в электронном виде, а также распечатанный в нескольких экземплярах направляется представителю заказчика. На оборудование, материалы и работы по проекту предоставляется коммерческое предложение
+	.popap-stages-back
+	.popap-stages
+		.popap-stages__close
+		form(action="" method="method").popap-stages__form 
+			.popap-stages__form-input 
+				input(type="text" name="stages-name" placeholder="Представьтесь, пожалуйста")
+			.popap-stages__form-input 
+				input(type="tel" name="stages-phone" placeholder="Ваш номер телефона")
+			.popap-stages__form-input.popap-stages__form-input--send 
+				button(type="submit") Отправить
