@@ -558,6 +558,14 @@ body.overflow-hidden {
   align-items: center;
 }
 
+.arrow-swiper > * {
+  transition: all 0.3s ease 0s;
+}
+
+.arrow-swiper > *:hover {
+  opacity: 0.7;
+}
+
 .arrow-swiper__prev {
   cursor: pointer;
 }
@@ -701,6 +709,19 @@ body.overflow-hidden {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.top-header__logo a:hover {
+  opacity: 0.7;
+}
+
+.top-header__tel {
+  transition: all 0.3s ease 0s;
+}
+
+.top-header__tel:hover span {
+  text-decoration: underline;
 }
 
 .top-header__lang {
@@ -762,6 +783,11 @@ body.overflow-hidden {
   border: 1px solid #262626;
   border-top: none;
   border-bottom: none;
+  transition: all 0.3s ease 0s;
+}
+
+.bottom-header__btn:hover {
+  opacity: 0.7;
 }
 
 .bottom-header__tel {
@@ -820,6 +846,10 @@ body.overflow-hidden {
   display: flex;
   align-items: center;
   color: #FFFFFF;
+}
+
+.menu-bottom-header__link:hover {
+  text-decoration: underline;
 }
 
 .attention-header {
@@ -931,6 +961,14 @@ body.overflow-hidden {
   color: #000000;
 }
 
+.top-footer__logo a {
+  transition: all 0.3s ease 0s;
+}
+
+.top-footer__logo a:hover {
+  opacity: 0.7;
+}
+
 .top-footer__row {
   margin-top: 14px;
   display: flex;
@@ -966,11 +1004,20 @@ body.overflow-hidden {
   color: #444444;
 }
 
+.top-footer__connection a:hover {
+  text-decoration: underline;
+}
+
 .top-footer__social a {
   display: inline-block;
   margin-left: 16px;
   width: 24px;
   height: 24px;
+  transition: all 0.3s ease 0s;
+}
+
+.top-footer__social a:hover {
+  opacity: 0.7;
 }
 
 .top-footer__social a img {
@@ -1003,6 +1050,10 @@ body.overflow-hidden {
   transform: translate(-50%, -50%);
 }
 
+.bottom-footer__center:hover {
+  text-decoration: underline;
+}
+
 .bottom-footer__right {
   padding-right: 54px;
   position: relative;
@@ -1016,6 +1067,11 @@ body.overflow-hidden {
   top: 50%;
   right: 0;
   transform: translate(0, -50%);
+  transition: all 0.3s ease 0s;
+}
+
+.bottom-footer__right a:hover {
+  opacity: 0.7;
 }
 
 .bottom-footer__right a img {
@@ -1048,6 +1104,11 @@ body.overflow-hidden {
   text-align: center;
   background: #FFFFFF;
   border-radius: 4px;
+  transition: all 0.3s ease 0s;
+}
+
+.hero__btn:hover {
+  opacity: 0.7;
 }
 
 .hero__btn span {
@@ -1197,6 +1258,11 @@ body.overflow-hidden {
   background: none;
   border-radius: 0;
   margin: 0 !important;
+  transition: all 0.3s ease 0s;
+}
+
+.tabs-calculation__pag .swiper-pagination-bullet:hover {
+  opacity: 0.7;
 }
 
 .tabs-calculation__pag .swiper-pagination-bullet:nth-child(1)::before {
@@ -1296,6 +1362,10 @@ body.overflow-hidden {
   align-items: center;
   color: #FFFFFF;
   margin-left: 8px;
+}
+
+.tabs-calculation__footer-item:hover span {
+  text-decoration: underline;
 }
 
 .options-calculation .options-calculation__square {
@@ -1420,6 +1490,11 @@ body.overflow-hidden {
 
 .price-calculation__btn {
   margin-top: 15px;
+  transition: all 0.3s ease 0s;
+}
+
+.price-calculation__btn:hover {
+  opacity: 0.7;
 }
 
 .select2 {
@@ -1441,6 +1516,11 @@ body.overflow-hidden {
   background: #000000;
   border: 1px solid #5D5D5D;
   border-radius: 3px;
+  transition: all 0.3s ease 0s;
+}
+
+.select2 .selection .select2-selection:hover {
+  opacity: 0.7;
 }
 
 .select2 .selection .select2-selection .select2-selection__rendered {
@@ -1565,6 +1645,11 @@ body.overflow-hidden {
   right: 15px;
   transform: translate(0, 0);
   display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.header-need__question:hover {
+  opacity: 0.7;
 }
 
 .header-need__question span {
@@ -1590,6 +1675,11 @@ body.overflow-hidden {
   line-height: 125%;
   color: #656565;
   margin-right: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.header-need .swiper-slide:hover {
+  opacity: 0.7;
 }
 
 .header-need .swiper-slide span {
@@ -1699,6 +1789,11 @@ body.overflow-hidden {
 .content-need__btn {
   display: inline-block;
   margin-top: 32px;
+  transition: all 0.3s ease 0s;
+}
+
+.content-need__btn:hover span {
+  text-decoration: underline;
 }
 
 .content-need__btn span {
@@ -1710,6 +1805,14 @@ body.overflow-hidden {
   color: #000000;
   margin-right: 10px;
   display: inline-block;
+}
+
+.content-need__introduction {
+  transition: all 0.3s ease 0s;
+}
+
+.content-need__introduction:hover {
+  opacity: 0.7;
 }
 
 .content-need__right {
@@ -1760,7 +1863,6 @@ body.overflow-hidden {
   width: 80px;
   height: 80px;
   opacity: 1;
-  transition: all 0.3s ease 0s;
 }
 
 .content-need__play-btn.hide {
@@ -2062,6 +2164,14 @@ body.overflow-hidden {
   border-radius: 50%;
 }
 
+.turnkey-work__footer-btn {
+  transition: all 0.3s ease 0s;
+}
+
+.turnkey-work__footer-btn:hover {
+  opacity: 0.7;
+}
+
 .stages {
   background-color: #ffffff;
   padding: 80px 0;
@@ -2120,6 +2230,11 @@ body.overflow-hidden {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease 0s;
+}
+
+.stages__item-btn:hover {
+  opacity: 0.7;
 }
 
 .stages__item-btn span {
@@ -2299,6 +2414,10 @@ body.overflow-hidden {
   margin-top: 32px;
 }
 
+.examples__btn:hover span {
+  text-decoration: underline;
+}
+
 .examples__btn span {
   font-family: "Open Sans";
   font-style: normal;
@@ -2322,6 +2441,11 @@ body.overflow-hidden {
   width: 16px;
   height: 16px;
   margin: 0 24px 0 0 !important;
+  transition: all 0.3s ease 0s;
+}
+
+.examples__pagination .swiper-pagination-bullet:hover {
+  opacity: 0.7;
 }
 
 .examples__pagination .swiper-pagination-bullet-active {
@@ -2397,6 +2521,11 @@ body.overflow-hidden {
   margin-top: 16px;
   padding: 0 8px;
   width: 100%;
+  transition: all 0.3s ease 0s;
+}
+
+.form-question__file:hover {
+  opacity: 0.7;
 }
 
 .form-question__file-label {
@@ -2437,6 +2566,11 @@ body.overflow-hidden {
   padding: 0 8px;
   display: flex;
   justify-content: flex-end;
+  transition: all 0.3s ease 0s;
+}
+
+.form-question__send:hover {
+  opacity: 0.7;
 }
 
 .form-question__send button {
@@ -2579,6 +2713,10 @@ body.overflow-hidden {
   margin-top: 22px;
   display: flex;
   align-items: center;
+}
+
+.item-news__link:hover span {
+  text-decoration: underline;
 }
 
 .item-news__link img {

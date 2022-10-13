@@ -43,6 +43,10 @@
 			background: none;
 			border-radius: 0;
 			margin: 0!important;
+			transition: all 0.3s ease 0s;
+			&:hover{
+				opacity: 0.7;
+			}
 			@media (max-width: 768px){
 				font-size: 4.444vw;
 				padding: 0 0 10.278vw 0;
@@ -177,6 +181,11 @@
 				@media (max-width: 768px){
 					font-size: 4.444vw;
 					margin-left: 2.222vw;
+				}
+			}
+			&:hover {
+				span {
+					text-decoration: underline;
 				}
 			}
 		}
@@ -332,6 +341,11 @@
 		}
 		&__btn {
 			margin-top: 15px;
+						transition: all 0.3s ease 0s;
+						
+							&:hover {
+								opacity: 0.7;
+							}
 			@media (max-width: 768px){
 				margin-top: 10vw;
 			}
@@ -357,6 +371,10 @@
 			background: #000000;
 			border: 1px solid #5D5D5D;
 			border-radius: 3px;
+			transition: all 0.3s ease 0s;
+			&:hover{
+				opacity: 0.7;
+			}
 			@media (max-width: 768px){
 				height: 13.333vw;
 				border: 0.278vw solid #5D5D5D;
