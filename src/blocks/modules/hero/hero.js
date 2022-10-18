@@ -36,3 +36,13 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	}
 })
+
+
+var swiper = new Swiper(".hero__swiper", {
+	allowTouchMove: false,
+	effect: 'fade',
+	autoHeight: true,
+	autoplay: {
+		delay: 4000,
+	}
+});
