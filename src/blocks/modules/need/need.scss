@@ -175,8 +175,7 @@
 		
 		&__list {
 			margin-top: 19px;
-			padding-bottom: 24px;
-			border-bottom: 1px solid #DEDEDE;
+			margin-bottom: 24px;
 			@media (max-width: 768px){
 				margin-top: 4.167vw;
 				padding-bottom: 8.333vw;
@@ -484,6 +483,31 @@
 					background: #000000;
 				}
 			}
+		}
+	}
+}
+
+
+
+.faq{
+	&-block{
+		&+&{
+			margin-top: 15px;
+		}
+		.content-need__title{
+			cursor: pointer;
+			&:before{
+				content: '+';
+				margin-right: 10px;
+			}
+			&.active{
+				&:before {
+					content: '-';
+				}
+			}
+		}
+		.content-need__text{
+			display: none;
 		}
 	}
 }

@@ -1783,8 +1783,7 @@ background: url('../img/hero/hero.jpg') center / cover no-repeat; */
 
 .content-need__list {
   margin-top: 19px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #DEDEDE;
+  margin-bottom: 24px;
 }
 
 .content-need__item {
@@ -2029,6 +2028,27 @@ background: url('../img/hero/hero.jpg') center / cover no-repeat; */
   background: #000000;
 }
 
+.faq-block + .faq-block {
+  margin-top: 15px;
+}
+
+.faq-block .content-need__title {
+  cursor: pointer;
+}
+
+.faq-block .content-need__title:before {
+  content: "+";
+  margin-right: 10px;
+}
+
+.faq-block .content-need__title.active:before {
+  content: "-";
+}
+
+.faq-block .content-need__text {
+  display: none;
+}
+
 .workwithus {
   padding: 56px 0;
 }
@@ -2060,7 +2080,7 @@ background: url('../img/hero/hero.jpg') center / cover no-repeat; */
 }
 
 .item-workwithus__header {
-  flex: 1 1 auto;
+  min-height: 75px;
   display: flex;
   align-items: center;
 }

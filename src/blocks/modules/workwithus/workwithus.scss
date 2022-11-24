@@ -63,7 +63,7 @@
 		}
 	}
 	&__header {
-		flex: 1 1 auto;
+		min-height: 75px;
 		display: flex;
 		align-items: center;
 		img {

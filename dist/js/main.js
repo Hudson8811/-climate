@@ -320,6 +320,27 @@ document.addEventListener('DOMContentLoaded', function () {
     return _formsend.apply(this, arguments);
   }
 });
+$(function () {
+  var $speed = 100;
+  var $class = 'active';
+  var $class_open = '.faq-answer';
+  $(document).ready(function () {
+    $('.faq-question').on('click', function () {
+      $ul = $(this).closest('ul');
+      $answer = $(this).closest('li').find($class_open);
+
+      if (!$(this).closest('li').hasClass($class)) {
+        $ul.find('li').each(function () {
+          if ($(this).hasClass($class)) $(this).removeClass($class).find($class_open).slideUp($speed);
+        });
+      }
+
+      $answer.stop().slideToggle($speed, 'linear', function () {
+        swiper2.updateAutoHeight(100);
+      }).closest('li').toggleClass($class);
+    });
+  });
+});
 
 /***/ }),
 
