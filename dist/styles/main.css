@@ -2428,6 +2428,7 @@ background: url('../img/hero/hero.jpg') center / cover no-repeat; */
 .examples__img {
   flex: 0 1 400px;
   position: relative;
+  align-self: start;
 }
 
 .examples__img::before {
@@ -2458,6 +2459,35 @@ background: url('../img/hero/hero.jpg') center / cover no-repeat; */
   line-height: 160%;
   color: #444444;
   margin-top: 20px;
+}
+
+.examples__body-text p,
+.examples__body-text ul {
+  margin-bottom: 15px;
+}
+
+.examples__body-text ul li {
+  padding-left: 15px;
+  position: relative;
+}
+
+.examples__body-text ul li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #444444;
+}
+
+.examples__body-text a {
+  color: #000;
+}
+
+.examples__body-text a:hover {
+  text-decoration: underline;
 }
 
 .examples__btn {
