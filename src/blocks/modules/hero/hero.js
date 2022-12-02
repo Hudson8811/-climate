@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$(document).on('click', '.hero__btn', function(event) {
+	$(document).on('click', '.hero__btn, .js-modal-like-hero', function(event) {
 		$('.popap-hero, .popap-hero-back').addClass('_active');
 		$('body').addClass('overflow-hidden');
 	});

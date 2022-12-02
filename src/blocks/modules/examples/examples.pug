@@ -1,12 +1,12 @@
 section#examples.examples
-	.examples__container.container 
+	.examples__container.container
 		.examples__title.general-title Примеры реализованных объектов
-		.examples__swiper.swiper 
+		.examples__swiper.swiper
 			.swiper-wrapper
-				.examples__slide.swiper-slide 
-					a(href="#").examples__img 
+				.examples__slide.swiper-slide
+					a(data-fancybox-trigger="project-example-1" href="javascript:;").examples__img
 						img(src="img/examples/1/1.jpg", alt="alt")
-					.examples__body 
+					.examples__body
 						.examples__body-title.general-title Кинотеатр «София»
 							br
 							| Москва, Сиреневый б-р, 31, центр «Место встречи София»
@@ -32,15 +32,27 @@ section#examples.examples
 								br
 								a(href="img/examples/1/roofs_plan.dwg") План кровли.dwg
 							p Осенью в 2021 году здание кинотеатра «София» ввели в эксплуатацию, открылись десять современных залов. Общая вместимость кинотеатра – 1 320 мест, при этом 20 из них оборудованы для маломобильных граждан. В теплое время года один кинозал будет функционировать на крыше ТЦ "Софии".
-						a(href="#").examples__btn 
+						a(data-fancybox-trigger="project-example-1" href="javascript:;").examples__btn
 							span Посмотреть проект
 							img(src="img/svg/arrow-circle.svg", alt="alt")
 
+					.hidden-project-gallery(style="display:none")
+						a(data-fancybox="project-example-1" href="img/examples/1/план 2.jpg")
+						a(data-fancybox="project-example-1" href="img/examples/1/план 3.jpg")
+						a(data-fancybox="project-example-1" href="img/examples/1/план.jpg")
+						a(data-fancybox="project-example-1" href="img/examples/1/AnyConv.com__Sofiya_1et-f OV2.jpg")
+						a(data-fancybox="project-example-1" href="img/examples/1/AnyConv.com__Sofiya_2et OV2.jpg")
+						a(data-fancybox="project-example-1" href="img/examples/1/AnyConv.com__Sofiya_3et-f OV2.jpg")
+						a(data-fancybox="project-example-1" href="img/examples/1/AnyConv.com__Sofiya_4et-f OV2.jpg")
+						a(data-fancybox="project-example-1" href="img/examples/1/AnyConv.com__Sofiya_5et-f OV2.jpg")
 
-		.examples__footer 
-			.examples__pagination 
-			.examples__arrow.arrow-swiper 
+
+
+
+		.examples__footer
+			.examples__pagination
+			.examples__arrow.arrow-swiper
 				.examples__arrow-prev.arrow-swiper__prev
-					img(src="img/svg/arrow-swiper-prev.svg", alt="alt") 
+					img(src="img/svg/arrow-swiper-prev.svg", alt="alt")
 				.examples__arrow-next.arrow-swiper__next
-					img(src="img/svg/arrow-swiper-next.svg", alt="alt") 
+					img(src="img/svg/arrow-swiper-next.svg", alt="alt")
