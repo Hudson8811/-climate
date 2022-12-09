@@ -1,41 +1,44 @@
 section#stages.stages
-	.stages__container.container 
+	.stages__container.container
 		.stages__title.general-title Этапы проектирования
-		.stages__items 
-			.stages__item 
-				.stages__item-img 
+		.stages__items
+			.stages__item
+				.stages__item-img
 					img(src="img/stages/1.jpg", alt="alt")
-				.stages__item-body 
+				.stages__item-body
 					.stages__item-title.general-title Выезд проектировщика
 					.stages__item-text Выезд специалиста согласовывается с заказчиком заранее и производится в удобное для заказчика время
-					a(href="#stages").stages__item-btn 
+					a(href="#stages").stages__item-btn
 						span Уточнить детали
-			.stages__item.stages__item--ord 
-				.stages__item-img 
+			.stages__item.stages__item--ord
+				.stages__item-img
 					img(src="img/stages/2.jpg", alt="alt")
-				.stages__item-body 
+				.stages__item-body
 					.stages__item-title.general-title Подбор оборудования и разработка аксонометрии
 					.stages__item-text Оборудование подбирается с учетом технических условий заказчика. Помимо обычной схемы создается аксонометрическая 3D модель в программе Autocad
-			.stages__item 
-				.stages__item-img 
+			.stages__item
+				.stages__item-img
 					img(src="img/stages/3.jpg", alt="alt")
-				.stages__item-body 
+				.stages__item-body
 					.stages__item-title.general-title Согласование и корректировка схемы
 					.stages__item-text Все схемы согласовываются с представителем заказчика и, если есть необходимость, корректируются
-			.stages__item.stages__item--ord 
-				.stages__item-img 
+			.stages__item.stages__item--ord
+				.stages__item-img
 					img(src="img/stages/4.jpg", alt="alt")
-				.stages__item-body 
-					.stages__item-text 
+				.stages__item-body
+					.stages__item-text
 					.stages__item-title.general-title Оформление, распечатка и предоставление КП
 					.stages__item-text Готовый проект в электронном виде, а также распечатанный в нескольких экземплярах направляется представителю заказчика. На оборудование, материалы и работы по проекту предоставляется коммерческое предложение
 	.popap-stages-back
 	.popap-stages
 		.popap-stages__close
-		form(action="" method="method").popap-stages__form 
-			.popap-stages__form-input 
+		form(action="" method="method").popap-stages__form
+			.modals-title Задать вопрос
+			div(style="display:none;")
+				input.js-theme(type="text" name="theme")
+			.popap-stages__form-input
 				input(type="text" name="stages-name" placeholder="Представьтесь, пожалуйста")
-			.popap-stages__form-input 
+			.popap-stages__form-input
 				input(type="tel" name="stages-phone" placeholder="Ваш номер телефона")
-			.popap-stages__form-input.popap-stages__form-input--send 
+			.popap-stages__form-input.popap-stages__form-input--send
 				button(type="submit") Отправить

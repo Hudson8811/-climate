@@ -37,12 +37,21 @@ need_pause.addEventListener("click", function (e) {
 
 
 $(document).ready(function() {
-	$(document).on('click', '.header-need__question', function(event) {
+	$(document).on('click', '.header-need__question, .js-open-need-modal', function(event) {
+		var title=$(this).text();
+		if(!(typeof(title)!=='undefined' && title.length>0)){
+			title='Задать вопрос';
+		}
+
+		var modal=$('.popap-need');
+		modal.find('.modals-title').html(title);
+		modal.find('.js-theme').val(title);
+
 		$('.popap-need, .popap-need-back').addClass('_active');
 		$('body').addClass('overflow-hidden');
-	
+
 		let href = $(this).attr('href');
-		
+
 		$('html, body').animate({
 			scrollTop: $(href).offset().top
 		}, {
@@ -50,13 +59,13 @@ $(document).ready(function() {
 			easing: "linear"
 		});
 
-		return false;	
+		return false;
 	});
 	$(document).on('click', '.popap-need-back, .popap-need__close', function(event) {
 		$('.popap-need, .popap-need-back').removeClass('_active');
 		$('body').removeClass('overflow-hidden');
-	});	
-	
+	});
+
 });
 
 

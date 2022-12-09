@@ -1,5 +1,14 @@
 $(document).ready(function() {
 	$(document).on('click', '.hero__btn, .js-modal-like-hero', function(event) {
+		var title=$(this).text();
+		if(!(typeof(title)!=='undefined' && title.length>0)){
+			title='Задать вопрос';
+		}
+
+		var modal=$('.popap-hero');
+		modal.find('.modals-title').html(title);
+		modal.find('.js-theme').val(title);
+
 		$('.popap-hero, .popap-hero-back').addClass('_active');
 		$('body').addClass('overflow-hidden');
 	});

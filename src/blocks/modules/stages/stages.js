@@ -1,10 +1,21 @@
 $(document).ready(function() {
-	$(document).on('click', '.stages__item-btn', function(event) {
+
+	$(document).on('click', '.stages__item-btn, .js-open-stages-modal', function(event) {
+		var title=$(this).text();
+		if(!(typeof(title)!=='undefined' && title.length>0)){
+			title='Задать вопрос';
+		}
+
+		var modal=$('.popap-stages');
+		modal.find('.modals-title').html(title);
+		modal.find('.js-theme').val(title);
+
+
 		$('.popap-stages, .popap-stages-back').addClass('_active');
 		$('body').addClass('overflow-hidden');
 
 		let href = $(this).attr('href');
-		
+
 		$('html, body').animate({
 			scrollTop: $(href).offset().top
 		}, {
@@ -12,7 +23,7 @@ $(document).ready(function() {
 			easing: "linear"
 		});
 
-		return false;	
+		return false;
 	});
 	$(document).on('click', '.popap-stages-back, .popap-stages__close', function(event) {
 		$('.popap-stages, .popap-stages-back').removeClass('_active');

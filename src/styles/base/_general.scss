@@ -102,6 +102,12 @@ body {
 		overflow: hidden;
 	}
 }
+textarea{
+	resize: vertical;
+}
+.popap-need__form-input--question textarea{
+	max-height: 300px;
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;

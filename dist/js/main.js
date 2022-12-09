@@ -120,6 +120,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 $(document).ready(function () {
   $(document).on('click', '.hero__btn, .js-modal-like-hero', function (event) {
+    var title = $(this).text();
+
+    if (!(typeof title !== 'undefined' && title.length > 0)) {
+      title = 'Задать вопрос';
+    }
+
+    var modal = $('.popap-hero');
+    modal.find('.modals-title').html(title);
+    modal.find('.js-theme').val(title);
     $('.popap-hero, .popap-hero-back').addClass('_active');
     $('body').addClass('overflow-hidden');
   });
@@ -246,7 +255,16 @@ need_pause.addEventListener("click", function (e) {
   need__play.classList.remove('hide');
 });
 $(document).ready(function () {
-  $(document).on('click', '.header-need__question', function (event) {
+  $(document).on('click', '.header-need__question, .js-open-need-modal', function (event) {
+    var title = $(this).text();
+
+    if (!(typeof title !== 'undefined' && title.length > 0)) {
+      title = 'Задать вопрос';
+    }
+
+    var modal = $('.popap-need');
+    modal.find('.modals-title').html(title);
+    modal.find('.js-theme').val(title);
     $('.popap-need, .popap-need-back').addClass('_active');
     $('body').addClass('overflow-hidden');
     var href = $(this).attr('href');
@@ -463,7 +481,16 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 $(document).ready(function () {
-  $(document).on('click', '.stages__item-btn', function (event) {
+  $(document).on('click', '.stages__item-btn, .js-open-stages-modal', function (event) {
+    var title = $(this).text();
+
+    if (!(typeof title !== 'undefined' && title.length > 0)) {
+      title = 'Задать вопрос';
+    }
+
+    var modal = $('.popap-stages');
+    modal.find('.modals-title').html(title);
+    modal.find('.js-theme').val(title);
     $('.popap-stages, .popap-stages-back').addClass('_active');
     $('body').addClass('overflow-hidden');
     var href = $(this).attr('href');

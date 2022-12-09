@@ -1,27 +1,30 @@
 section.hero
-	.hero__swiper.swiper 
+	.hero__swiper.swiper
 		.swiper-wrapper
-			.hero__slide.swiper-slide 
+			.hero__slide.swiper-slide
 				img(src="img/hero/hero.jpg", alt="alt")
-			.hero__slide.swiper-slide 
+			.hero__slide.swiper-slide
 				img(src="img/hero/hero2.jpg", alt="alt")
-			.hero__slide.swiper-slide 
+			.hero__slide.swiper-slide
 				img(src="img/hero/hero3.jpg", alt="alt")
-			.hero__slide.swiper-slide 
+			.hero__slide.swiper-slide
 				img(src="img/hero/hero4.jpg", alt="alt")
 
-	.hero__container.container 
+	.hero__container.container
 		.hero__title Мечтай, проектируй, воплощай
-		a(href="#").hero__btn 	
+		a(href="#").hero__btn
 			span Консультация инженера
 	.popap-hero-back
 	.popap-hero
 		.popap-hero__close
-		form(action="" method="method").popap-hero__form 
-			.popap-hero__form-input 
+		form(action="" method="method").popap-hero__form
+			.modals-title Задать вопрос
+			div(style="display:none;")
+				input.js-theme(type="text" name="theme")
+			.popap-hero__form-input
 				input(type="text" name="hero-name" placeholder="Представьтесь, пожалуйста")
-			.popap-hero__form-input 
+			.popap-hero__form-input
 				input(type="tel" name="hero-phone" placeholder="Ваш номер телефона")
-			.popap-hero__form-input.popap-hero__form-input--send 
+			.popap-hero__form-input.popap-hero__form-input--send
 				button(type="submit") Отправить
 

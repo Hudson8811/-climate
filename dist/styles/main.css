@@ -1290,6 +1290,14 @@ body.overflow-hidden {
   overflow: hidden;
 }
 
+textarea {
+  resize: vertical;
+}
+
+.popap-need__form-input--question textarea {
+  max-height: 300px;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -2455,6 +2463,17 @@ background: url('../img/hero/hero.jpg') center / cover no-repeat; */
   padding-top: 46px;
 }
 
+.modals-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 125%;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
 .header-need {
   margin-top: 31px;
   border-bottom: 1px solid #AEAEAE;
@@ -2708,7 +2727,7 @@ background: url('../img/hero/hero.jpg') center / cover no-repeat; */
   transform: translate(-50%, -50%);
   background: #363636;
   border-radius: 10px;
-  width: 400px;
+  width: 600px;
   max-width: 100%;
   padding: 40px;
   opacity: 0;
@@ -4262,6 +4281,10 @@ background: url('../img/hero/hero1.jpg') center / cover no-repeat; */
 
   .need {
     padding-top: 7.778vw;
+  }
+
+  .modals-title {
+    font-size: 4.167vw;
   }
 
   .header-need {

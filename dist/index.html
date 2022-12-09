@@ -69,42 +69,46 @@
       </header>
       <main class="main">
         <section class="hero">
-          <div class="hero__swiper swiper"> 
+          <div class="hero__swiper swiper">
             <div class="swiper-wrapper">
-              <div class="hero__slide swiper-slide"> <img src="img/hero/hero.jpg" alt="alt"></div>
-              <div class="hero__slide swiper-slide"> <img src="img/hero/hero2.jpg" alt="alt"></div>
-              <div class="hero__slide swiper-slide"> <img src="img/hero/hero3.jpg" alt="alt"></div>
-              <div class="hero__slide swiper-slide"> <img src="img/hero/hero4.jpg" alt="alt"></div>
+              <div class="hero__slide swiper-slide"><img src="img/hero/hero.jpg" alt="alt"></div>
+              <div class="hero__slide swiper-slide"><img src="img/hero/hero2.jpg" alt="alt"></div>
+              <div class="hero__slide swiper-slide"><img src="img/hero/hero3.jpg" alt="alt"></div>
+              <div class="hero__slide swiper-slide"><img src="img/hero/hero4.jpg" alt="alt"></div>
             </div>
           </div>
-          <div class="hero__container container"> 
-            <div class="hero__title">Мечтай, проектируй, воплощай</div><a class="hero__btn" href="#">	<span>Консультация инженера</span></a>
+          <div class="hero__container container">
+            <div class="hero__title">Мечтай, проектируй, воплощай</div><a class="hero__btn" href="#"><span>Консультация инженера</span></a>
           </div>
           <div class="popap-hero-back"></div>
           <div class="popap-hero">
             <div class="popap-hero__close"></div>
-            <form class="popap-hero__form" action="" method="method"> 
-              <div class="popap-hero__form-input"> 
+            <form class="popap-hero__form" action="" method="method">
+              <div class="modals-title">Задать вопрос</div>
+              <div style="display:none;">
+                <input class="js-theme" type="text" name="theme">
+              </div>
+              <div class="popap-hero__form-input">
                 <input type="text" name="hero-name" placeholder="Представьтесь, пожалуйста">
               </div>
-              <div class="popap-hero__form-input"> 
+              <div class="popap-hero__form-input">
                 <input type="tel" name="hero-phone" placeholder="Ваш номер телефона">
               </div>
-              <div class="popap-hero__form-input popap-hero__form-input--send"> 
+              <div class="popap-hero__form-input popap-hero__form-input--send">
                 <button type="submit">Отправить</button>
               </div>
             </form>
           </div>
         </section>
         <section class="calculation" id="calculation">
-          <div class="calculation__container container"> 
-            <div class="calculation__body"> 
+          <div class="calculation__container container">
+            <div class="calculation__body">
               <div class="calculation__title general-title general-title--white">Расчет стоимости проектирования</div>
               <div class="calculation__tabs tabs-calculation">
-                <div class="tabs-calculation__pag"> </div>
-                <div class="tabs-calculation__swiper swiper"> 
+                <div class="tabs-calculation__pag"></div>
+                <div class="tabs-calculation__swiper swiper">
                   <div class="swiper-wrapper">
-                    <div class="tabs-calculation__item swiper-slide"> 
+                    <div class="tabs-calculation__item swiper-slide">
                       <div class="tabs-calculation__options options-calculation">
                         <div class="tabs-calculation__title">Параметры</div>
                         <select class="options-calculation__select1 options-calculation__item" name="select1">
@@ -128,43 +132,48 @@
                         <div class="options-calculation__square options-calculation__item">
                           <div class="options-calculation__title">Укажите площадь</div>
                           <input class="options-calculation__value" type="text" value="S²">
-                          <div class="options-calculation__input-range"> 
+                          <div class="options-calculation__input-range">
                             <input type="range" name="" id="input" min="0" max="1000" value="50">
                           </div>
                         </div>
                       </div>
-                      <div class="tabs-calculation__price price-calculation"> 
+                      <div class="tabs-calculation__price price-calculation">
                         <div class="tabs-calculation__title">Стоимость</div>
                         <div class="price-calculation__number">160 000 ₽</div>
-                        <div class="price-calculation__text">При заказе систем вентилияции и кондиционирования по нашему проекту скидка 10% на работы и оборудование! </div>
+                        <div class="price-calculation__text">При заказе систем вентилияции и кондиционирования по нашему проекту скидка 10% на работы и оборудование!</div>
                         <div class="price-calculation__btn order-project-btn"><span>Заказать проект</span><img src="img/svg/arrow-circle.svg" alt="alt"></div>
                       </div>
                     </div>
-                    <div class="tabs-calculation__item swiper-slide"> 
-                      <div class="tabs-calculation__options options-calculation">
-                        <div class="tabs-calculation__title">Оборудование</div>
-                      </div>
-                      <div class="tabs-calculation__price price-calculation"> 
-                        <div class="tabs-calculation__title">Стоимость</div>
-                        <div class="price-calculation__number">160 000 ₽</div>
-                        <div class="price-calculation__text">При заказе систем вентилияции и кондиционирования по нашему проекту скидка 10% на работы и оборудование! </div>
-                        <div class="price-calculation__btn order-project-btn"><span>Заказать проект</span><img src="img/svg/arrow-circle.svg" alt="alt"></div>
-                      </div>
-                    </div>
+                    <!--.tabs-calculation__item.swiper-slide
+                    .tabs-calculation__options.options-calculation
+                    	.tabs-calculation__title Оборудование
+                    .tabs-calculation__price.price-calculation
+                    	.tabs-calculation__title Стоимость
+                    	.price-calculation__number 160 000 ₽
+                    	.price-calculation__text При заказе систем вентилияции и кондиционирования по нашему проекту скидка 10% на работы и оборудование!
+                    	.price-calculation__btn.order-project-btn
+                    		span Заказать проект
+                    		img(src="img/svg/arrow-circle.svg", alt="alt")
+                    
+                    -->
                   </div>
                 </div>
-                <div class="tabs-calculation__footer"> <a class="tabs-calculation__footer-item" href="#"> <img src="img/svg/calculate1.svg" alt="alt"><span>Возможность полной постоплаты работ </span></a><a class="tabs-calculation__footer-item" href="#"> <img src="img/svg/calculate2.svg" alt="alt"><span>Гарантия регистрации объекта</span></a><a class="tabs-calculation__footer-item" href="#"> <img src="img/svg/calculate3.svg" alt="alt"><span>Гарантия на монтаж</span></a><a class="tabs-calculation__footer-item" href="#"> <img src="img/svg/calculate4.svg" alt="alt"><span>Бесплатный выезд на замер </span></a></div>
+                <div class="tabs-calculation__footer">
+                  <div class="tabs-calculation__footer-item"><img src="img/svg/calculate1.svg" alt="alt"><span>Возможность полной постоплаты работ</span></div>
+                  <div class="tabs-calculation__footer-item"><img src="img/svg/calculate2.svg" alt="alt"><span>Гарантия регистрации объекта</span></div>
+                  <div class="tabs-calculation__footer-item"><img src="img/svg/calculate3.svg" alt="alt"><span>Гарантия на монтаж</span></div>
+                  <div class="tabs-calculation__footer-item"><img src="img/svg/calculate4.svg" alt="alt"><span>Бесплатный выезд на замер</span></div>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <section class="need" id="need">
-          <div class="need__title general-title"> 
-            <div class="container">
-               Зачем нужен проект?</div>
+          <div class="need__title general-title">
+            <div class="container">Зачем нужен проект?</div>
           </div>
-          <div class="header-need"> 
-            <div class="header-need__container container"><a class="header-need__question" href="#need"> <img src="img/svg/message.svg" alt="alt"><span>Задать вопрос</span></a>
+          <div class="header-need">
+            <div class="header-need__container container"><a class="header-need__question" href="#need"><img src="img/svg/message.svg" alt="alt"><span>Задать вопрос</span></a>
               <div class="swiper header-need-swiper" thumbsslider="">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide header-need__introduction"><span>Введение</span></div>
@@ -178,25 +187,25 @@
             <div class="content-need__container container">
               <div class="swiper content-need-swiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide content-need__introduction"> 
-                    <div class="content-need__row"> 
-                      <div class="content-need__left"> 
+                  <div class="swiper-slide content-need__introduction">
+                    <div class="content-need__row">
+                      <div class="content-need__left">
                         <!--.content-need__title Nemo enim ipsam voluptatem quia voluptas-->
                         <div class="content-need__text">Проект систем вентиляции и кондиционирования — это не просто талантливые рисунки художника или архитектора, и даже не результат любительского эксперимента, выполненного на компьютере при помощи специализированного программного обеспечения</div>
                         <div class="content-need__text">Проект — это комплект чертежей, разработанный и рассчитанный специалистами в области проектирования, с применением ГОСТов и СНИПов, без которых дальнейший монтаж и подбор оборудования само по себе представляется невозможным, так как отсутствие проекта приведет к  ряду проблем связанных с неправильным расчетом и подбором размеров сети воздуховодов, отсутствие технологии монтажа, подбору оборудования не соответствующего требуемым рабочим условиям. В итоге вы получите завышенную стоимость работ, из-за отсутствия правильной спецификации, а работа оборудования не будет сопровождаться необходимой эффективностью.</div>
                         <!--ul.content-need__list
-                        li.content-need__item 
-                        	span Sed ut perspiciatis 
+                        li.content-need__item
+                        	span Sed ut perspiciatis
                         	|unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
-                        li.content-need__item.content-need__item-lh 
-                        	span Nemo enim 
+                        li.content-need__item.content-need__item-lh
+                        	span Nemo enim
                         	|ipsam voluptatem quia voluptas sit aspernatur aut
-                        li.content-need__item.content-need__item-lh 
-                        	span Neque porro quisquam 
+                        li.content-need__item.content-need__item-lh
+                        	span Neque porro quisquam
                         	|est, qui dolorem ipsum quia dolor
-                        --><a class="content-need__btn item-click" href="#examples"> <span>Переход на наши проекты </span><img src="img/svg/arrow-circle.svg" alt="alt"></a>
+                        --><a class="content-need__btn item-click" href="#examples"><span>Переход на наши проекты</span><img src="img/svg/arrow-circle.svg" alt="alt"></a>
                       </div>
-                      <div class="content-need__right" id="content-need__right"> 
+                      <div class="content-need__right" id="content-need__right">
                         <video class="content-need__player" id="content-need__player" src=""></video>
                         <div class="content-need__pause pause"></div>
                         <div class="content-need__img play"><img src="img/need/1.jpg" alt="alt"></div>
@@ -294,17 +303,21 @@
           <div class="popap-need-back"></div>
           <div class="popap-need">
             <div class="popap-need__close"></div>
-            <form class="popap-need__form" action="" method="method"> 
-              <div class="popap-need__form-input"> 
+            <form class="popap-need__form" action="" method="method">
+              <div class="modals-title">Задать вопрос</div>
+              <div style="display:none;">
+                <input class="js-theme" type="text" name="theme">
+              </div>
+              <div class="popap-need__form-input">
                 <input type="text" name="need-name" placeholder="Представьтесь, пожалуйста">
               </div>
-              <div class="popap-need__form-input"> 
+              <div class="popap-need__form-input">
                 <input type="tel" name="need-phone" placeholder="Ваш номер телефона">
               </div>
-              <div class="popap-need__form-input popap-need__form-input--question"> 
+              <div class="popap-need__form-input popap-need__form-input--question">
                 <textarea type="text" name="need-question" placeholder="Задайте Ваш вопрос"></textarea>
               </div>
-              <div class="popap-need__form-input popap-need__form-input--send"> 
+              <div class="popap-need__form-input popap-need__form-input--send">
                 <button type="submit">Отправить</button>
               </div>
             </form>
@@ -381,34 +394,34 @@
           </div>
         </section>
         <section class="stages" id="stages">
-          <div class="stages__container container"> 
+          <div class="stages__container container">
             <div class="stages__title general-title">Этапы проектирования</div>
-            <div class="stages__items"> 
-              <div class="stages__item"> 
-                <div class="stages__item-img"> <img src="img/stages/1.jpg" alt="alt"></div>
-                <div class="stages__item-body"> 
+            <div class="stages__items">
+              <div class="stages__item">
+                <div class="stages__item-img"><img src="img/stages/1.jpg" alt="alt"></div>
+                <div class="stages__item-body">
                   <div class="stages__item-title general-title">Выезд проектировщика</div>
-                  <div class="stages__item-text">Выезд специалиста согласовывается с заказчиком заранее и производится в удобное для заказчика время</div><a class="stages__item-btn" href="#stages"> <span>Уточнить детали</span></a>
+                  <div class="stages__item-text">Выезд специалиста согласовывается с заказчиком заранее и производится в удобное для заказчика время</div><a class="stages__item-btn" href="#stages"><span>Уточнить детали</span></a>
                 </div>
               </div>
-              <div class="stages__item stages__item--ord"> 
-                <div class="stages__item-img"> <img src="img/stages/2.jpg" alt="alt"></div>
-                <div class="stages__item-body"> 
+              <div class="stages__item stages__item--ord">
+                <div class="stages__item-img"><img src="img/stages/2.jpg" alt="alt"></div>
+                <div class="stages__item-body">
                   <div class="stages__item-title general-title">Подбор оборудования и разработка аксонометрии</div>
                   <div class="stages__item-text">Оборудование подбирается с учетом технических условий заказчика. Помимо обычной схемы создается аксонометрическая 3D модель в программе Autocad</div>
                 </div>
               </div>
-              <div class="stages__item"> 
-                <div class="stages__item-img"> <img src="img/stages/3.jpg" alt="alt"></div>
-                <div class="stages__item-body"> 
+              <div class="stages__item">
+                <div class="stages__item-img"><img src="img/stages/3.jpg" alt="alt"></div>
+                <div class="stages__item-body">
                   <div class="stages__item-title general-title">Согласование и корректировка схемы</div>
                   <div class="stages__item-text">Все схемы согласовываются с представителем заказчика и, если есть необходимость, корректируются</div>
                 </div>
               </div>
-              <div class="stages__item stages__item--ord"> 
-                <div class="stages__item-img"> <img src="img/stages/4.jpg" alt="alt"></div>
-                <div class="stages__item-body"> 
-                  <div class="stages__item-text"> </div>
+              <div class="stages__item stages__item--ord">
+                <div class="stages__item-img"><img src="img/stages/4.jpg" alt="alt"></div>
+                <div class="stages__item-body">
+                  <div class="stages__item-text"></div>
                   <div class="stages__item-title general-title">Оформление, распечатка и предоставление КП</div>
                   <div class="stages__item-text">Готовый проект в электронном виде, а также распечатанный в нескольких экземплярах направляется представителю заказчика. На оборудование, материалы и работы по проекту предоставляется коммерческое предложение</div>
                 </div>
@@ -418,14 +431,18 @@
           <div class="popap-stages-back"></div>
           <div class="popap-stages">
             <div class="popap-stages__close"></div>
-            <form class="popap-stages__form" action="" method="method"> 
-              <div class="popap-stages__form-input"> 
+            <form class="popap-stages__form" action="" method="method">
+              <div class="modals-title">Задать вопрос</div>
+              <div style="display:none;">
+                <input class="js-theme" type="text" name="theme">
+              </div>
+              <div class="popap-stages__form-input">
                 <input type="text" name="stages-name" placeholder="Представьтесь, пожалуйста">
               </div>
-              <div class="popap-stages__form-input"> 
+              <div class="popap-stages__form-input">
                 <input type="tel" name="stages-phone" placeholder="Ваш номер телефона">
               </div>
-              <div class="popap-stages__form-input popap-stages__form-input--send"> 
+              <div class="popap-stages__form-input popap-stages__form-input--send">
                 <button type="submit">Отправить</button>
               </div>
             </form>
