@@ -104,7 +104,7 @@
           <div class="calculation__container container">
             <div class="calculation__body">
               <div class="calculation__title general-title general-title--white">Расчет стоимости проектирования</div>
-              <div class="calculation__tabs tabs-calculation">
+              <form class="calculation__tabs tabs-calculation" id="form-calculation__tabs" action="">
                 <div class="tabs-calculation__pag"></div>
                 <div class="tabs-calculation__swiper swiper">
                   <div class="swiper-wrapper">
@@ -112,37 +112,40 @@
                     <div class="tabs-calculation__item">
                       <div class="tabs-calculation__options options-calculation">
                         <div class="tabs-calculation__title">Параметры</div>
-                        <select class="options-calculation__select1 options-calculation__item" name="select1">
-                          <option value="1">Тип помещения1</option>
-                          <option value="2">Тип помещения2</option>
-                          <option value="3">Тип помещения3</option>
-                          <option value="4">Тип помещения4</option>
+                        <select class="options-calculation__select1 options-calculation__item" name="room_type">
+                          <option value="Тип помещения 1">Тип помещения1</option>
+                          <option value="Тип помещения 2">Тип помещения2</option>
+                          <option value="Тип помещения 3">Тип помещения3</option>
+                          <option value="Тип помещения 4">Тип помещения4</option>
                         </select>
-                        <select class="options-calculation__select2 options-calculation__item" name="select2">
-                          <option value="1">Тип кондиционера1</option>
-                          <option value="2">Тип кондиционера2</option>
-                          <option value="3">Тип кондиционера3</option>
-                          <option value="4">Тип кондиционера4</option>
+                        <select class="options-calculation__select2 options-calculation__item" name="cond_type">
+                          <option value="Тип кондиционера 1">Тип кондиционера1</option>
+                          <option value="Тип кондиционера 2">Тип кондиционера2</option>
+                          <option value="Тип кондиционера 3">Тип кондиционера3</option>
+                          <option value="Тип кондиционера 4">Тип кондиционера4</option>
                         </select>
-                        <select class="options-calculation__select3 options-calculation__item" name="select3">
-                          <option value="1">Тип вентиляции1</option>
-                          <option value="2">Тип вентиляции2</option>
-                          <option value="3">Тип вентиляции3</option>
-                          <option value="4">Тип вентиляции4</option>
+                        <select class="options-calculation__select3 options-calculation__item" name="vent_type">
+                          <option value="Тип вентиляции 1">Тип вентиляции1</option>
+                          <option value="Тип вентиляции 2">Тип вентиляции2</option>
+                          <option value="Тип вентиляции 3">Тип вентиляции3</option>
+                          <option value="Тип вентиляции 4">Тип вентиляции4</option>
                         </select>
                         <div class="options-calculation__square options-calculation__item">
                           <div class="options-calculation__title">Укажите площадь</div>
-                          <input class="options-calculation__value" type="text" value="S²">
+                          <input class="options-calculation__value" type="text" name="area" value="S²">
                           <div class="options-calculation__input-range">
                             <input type="range" name="" id="input" min="0" max="1000" value="50">
                           </div>
+                        </div>
+                        <div class="popap-hero__form-input popap-hero__form-input--price-calculation">
+                          <input type="tel" required name="phone" placeholder="Ваш номер телефона">
                         </div>
                       </div>
                       <div class="tabs-calculation__price price-calculation">
                         <div class="tabs-calculation__title">Стоимость</div>
                         <div class="price-calculation__number">160 000 ₽</div>
                         <div class="price-calculation__text">При заказе систем вентилияции и кондиционирования по нашему проекту скидка 10% на работы и оборудование!</div>
-                        <div class="price-calculation__btn order-project-btn"><span>Заказать проект</span><img src="img/svg/arrow-circle.svg" alt="alt"></div>
+                        <button class="price-calculation__btn order-project-btn" type="submit"><span>Заказать проект</span><img src="img/svg/arrow-circle.svg" alt="alt"></button>
                       </div>
                     </div>
                     <!--.tabs-calculation__item.swiper-slide
@@ -165,7 +168,7 @@
                   <div class="tabs-calculation__footer-item"><img src="img/svg/calculate3.svg" alt="alt"><span>Гарантия на монтаж</span></div>
                   <div class="tabs-calculation__footer-item"><img src="img/svg/calculate4.svg" alt="alt"><span>Бесплатный выезд на замер</span></div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </section>

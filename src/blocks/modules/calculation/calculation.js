@@ -32,4 +32,36 @@ $(document).ready(function() {
 	window.tabsCalculationSwiper=swiper;
 */
 
+
+
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+	const form_calc = document.querySelector('#form-calculation__tabs');
+	form_calc.addEventListener('submit', formsend);
+	async function formsend(e) {
+		e.preventDefault();
+
+		let formDatastages = new FormData(form_calc);
+
+		console.log(formDatastages);
+
+		form_calc.classList.add('_sending');
+
+		let responsestages = await fetch('sendcalculation.php', {
+			method: 'POST',
+			body: formDatastages
+		});
+
+		if (responsestages.ok) {
+			let result = await responsestages.json();
+			alert(result.message);
+			form_calc.reset();
+			form_calc.classList.remove('_sending');
+		} else {
+			alert("Ошибка");
+			form_calc.classList.remove('_sending');
+		}
+	}
+})

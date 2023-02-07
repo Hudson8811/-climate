@@ -192,6 +192,20 @@
 	}
 }
 
+.popap-hero__form-input--price-calculation{
+
+	background: #000000;
+	border: 1px solid #5D5D5D;
+	width: 100%;
+	height: 48px;
+	margin-top: 12px;
+	@media (max-width: 768px){
+		height: 13.333vw;
+		border: 0.278vw solid #5D5D5D;
+		margin-top: 2.778vw;
+	}
+}
+
 .options-calculation {
 	.options-calculation__square {
 		position: relative;
