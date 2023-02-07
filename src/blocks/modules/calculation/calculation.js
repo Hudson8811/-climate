@@ -19,12 +19,17 @@ input.addEventListener("input", () => {
 	value.value = input.value + 'м²';
 })
 
-var swiper = new Swiper(".tabs-calculation__swiper", {
-	pagination: {
-		el: ".tabs-calculation__pag",
-		clickable: true,
-	},
-	allowTouchMove: false,
-	effect: 'fade',
-	autoHeight: true,
+$(document).ready(function() {
+	/*var swiper = new Swiper(".tabs-calculation__swiper", {
+		pagination: {
+			el: ".tabs-calculation__pag",
+			clickable: true,
+		},
+		allowTouchMove: false,
+		effect: 'fade',
+		//autoHeight: true,
+	});
+	window.tabsCalculationSwiper=swiper;
+*/
+
 });

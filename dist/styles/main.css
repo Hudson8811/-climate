@@ -4213,6 +4213,7 @@ background: url('../img/hero/hero1.jpg') center / cover no-repeat; */
 
   .price-calculation {
     margin-top: 7.778vw;
+    min-height: auto;
   }
 
   .price-calculation__number {

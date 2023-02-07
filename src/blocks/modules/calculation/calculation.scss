@@ -15,7 +15,7 @@
 				border-radius: 2.778vw;
 			}
 		}
-	
+
 			&__title {}
 
 			&__tabs {}
@@ -119,7 +119,7 @@
 					}
 				}
 			}
-		
+
 			&__options {
 				flex: 0 1 50%;
 				display: flex;
@@ -302,55 +302,57 @@
 }
 
 .price-calculation {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	min-height: 100%;
+	@media (max-width: 768px){
+		margin-top: 7.778vw;
+		min-height: auto;
+	}
+	&__number {
+		font-family: 'Fira Sans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 125%;
+		color: #00A85D;
+		margin-top: 16px;
 		@media (max-width: 768px){
-			margin-top: 7.778vw;
+			font-size: 11.111vw;
+			margin-top: 3.333vw;
 		}
-		&__number {
-			font-family: 'Fira Sans';
-			font-style: normal;
-			font-weight: 700;
-			font-size: 40px;
-			line-height: 125%;
-			color: #00A85D;
-			margin-top: 16px;
-			@media (max-width: 768px){
-				font-size: 11.111vw;
-				margin-top: 3.333vw;
-			}
+	}
+
+	&__text {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 160%;
+		color: #FFFFFF;
+		margin-top: 24px;
+		flex: 1 1 auto;
+		max-width: 450px;
+		@media (max-width: 768px){
+			font-size: 4.167vw;
+			max-width: 100%;
+			margin-top: 2.778vw;
 		}
-	
-		&__text {
-			font-family: 'Open Sans';
-			font-style: normal;
-			font-weight: 400;
-			font-size: 15px;
-			line-height: 160%;
-			color: #FFFFFF;
-			margin-top: 24px;
-			flex: 1 1 auto;
-			max-width: 450px;
-			@media (max-width: 768px){
-				font-size: 4.167vw;
-				max-width: 100%;
-				margin-top: 2.778vw;
-			}
+	}
+	&__btn {
+		margin-top: 15px;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			opacity: 0.7;
 		}
-		&__btn {
-			margin-top: 15px;
-						transition: all 0.3s ease 0s;
-						
-							&:hover {
-								opacity: 0.7;
-							}
-			@media (max-width: 768px){
-				margin-top: 10vw;
-			}
+		@media (max-width: 768px){
+			margin-top: 10vw;
 		}
+	}
 }
+
 .select2 {
 	display: inline-block;
 	width: 100%;
@@ -475,7 +477,7 @@
 			.select2-selection__arrow {
 				b {
 					transform: rotate(-180deg);
-			
+
 					&::before,
 					&::after {
 						background-color: #ffffff;
